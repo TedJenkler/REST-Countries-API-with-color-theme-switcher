@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const Filter = ( { cData, setCData }) => {
+const FilterByRegion = ( { setCData }) => {
     const [fRegion, setFRegion] = useState(null);
 
     useEffect(() => {
@@ -32,4 +32,4 @@ const Filter = ( { cData, setCData }) => {
     )
 }
 
-export default Filter
+export default FilterByRegion
