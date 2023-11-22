@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
 
-const Flags = () => {
-
-    const [cData, setCData] = useState([])
+const Flags = ({ cData, setCData }) => {
 
     useEffect(() => {
         const fetchData = async () => {
           const response = await fetch('https://restcountries.com/v3.1/all')
           const data = await response.json()
           setCData(data)
-          console.log(data)
         }
 
         fetchData()
@@ -26,7 +23,8 @@ const Flags = () => {
                     <p>Capital: {country.capital}</p>
                 </div>
             )
-        })}
+        })
+    }
     </> )
 }
 
