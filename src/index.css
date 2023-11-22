@@ -20,4 +20,5 @@ body, #root, .container {
   background-color: rgb(255 255 255);
   width: 75%;
   margin: 1em;
+  padding: 0em;
 }
