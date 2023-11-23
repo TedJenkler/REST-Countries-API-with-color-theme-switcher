@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const FilterByRegion = ( { setCData }) => {
+const FilterByRegion = ( { setCData, toggle }) => {
     const [fRegion, setFRegion] = useState(null);
 
     useEffect(() => {
@@ -19,8 +19,8 @@ const FilterByRegion = ( { setCData }) => {
 
 
     return (
-        <div className="selectarea">
-            <select className="rselect" onChange={(e) => {setFRegion(e.target.value)}}>
+        <div className={toggle === false ? "selectarea lightmode-bg" : "selectarea darkmode-bg"}>
+            <select className={toggle === false ? "rselect lightmode-element" : "rselect darkmode-element"} onChange={(e) => {setFRegion(e.target.value)}}>
                 <option value={null}>Filter By Region</option>
                 <option value="africa">Africa</option>
                 <option value="america">America</option>

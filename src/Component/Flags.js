@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Flags = ({ cData, setCData }) => {
+const Flags = ({ cData, setCData, toggle }) => {
 
     useEffect(() => {
         const fetchData = async () => {
@@ -15,7 +15,7 @@ const Flags = ({ cData, setCData }) => {
     return (<>
         {cData.map((country) => {
             return (
-                <div key={country.name.official} className="card">
+                <div key={country.name.official} className={toggle === false ? "card lightmode-element" : "card darkmode-element"}>
                     <img src={country.flags.svg} alt=""></img>
                     <h1>{country.name.official}</h1>
                     <p><strong className="bold">Population:</strong> {country.population}</p>

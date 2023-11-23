@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import searchiconlightmode from "../Img/magnifying-glass-solid-lightmode.png"
+import searchicondarkmode from "../Img/darkmode.png"
 
-const FilterBySearch = ( { setCData }) => {
+const FilterBySearch = ( { setCData, toggle }) => {
     const [search, setSearch] = useState("")
     console.log(search)
     useEffect(() => {
@@ -19,9 +20,9 @@ const FilterBySearch = ( { setCData }) => {
     },[search])
     return (
         <>
-        <label htmlFor="search" className="searchlabel lightmode-element">
-            <img className="lightmode-input" id="searchicon" src={searchiconlightmode} />
-            <input id="search" className="search-input lightmode-input" type="text" onChange={(e) => {setSearch(e.target.value)}} placeholder="Search for a country..." value={search}></input>
+        <label htmlFor="search" className={toggle === false ? "searchlabel lightmode-element" : "searchlabel darkmode-element"}>
+            <img className="lightmode-input" id="searchicon" src={toggle === false ? searchiconlightmode : searchicondarkmode} />
+            <input id="search" className={toggle === false ? "search-input lightmode-element" : "search-input darkmode-element"} type="text" onChange={(e) => {setSearch(e.target.value)}} placeholder="Search for a country..." value={search}></input>
         </label>
         </>
     )
