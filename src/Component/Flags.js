@@ -15,12 +15,12 @@ const Flags = ({ cData, setCData }) => {
     return (<>
         {cData.map((country) => {
             return (
-                <div className="card">
+                <div key={country.name.official} className="card">
                     <img src={country.flags.svg} alt=""></img>
                     <h1>{country.name.official}</h1>
-                    <p>Population: {country.population}</p>
-                    <p>Region: {country.region}</p>
-                    <p>Capital: {country.capital}</p>
+                    <p><strong className="bold">Population:</strong> {country.population}</p>
+                    <p><strong className="bold">Region:</strong> {country.region}</p>
+                    <p><strong className="bold">Capital:</strong> {country.capital}</p>
                 </div>
             )
         })

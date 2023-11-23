@@ -20,5 +20,88 @@ body, #root, .container {
   background-color: rgb(255 255 255);
   width: 75%;
   margin: 1em;
-  padding: 0em;
+  padding: 0em 0em 2em 0em;
+  border-radius: 0.5em;
+  border: none;
+}
+
+.card > img {
+  border-radius: 0.5em 0.5em 0 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.card > h1 {
+  margin: 0.75em 0 0.75em 0.9em;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0em 1em 0 0em;
+}
+
+.card > p {
+  margin: 0 0 0.5em 1.5em;
+  padding: 0em 1em 0 0em;
+}
+
+
+.bold {
+  font-weight: 500;
+}
+/* Filter Search */
+
+.searchlabel {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 1em 2em 1em;
+  border-radius: 0.5em;
+  padding: 0 2.5em 0 2.5em;
+}
+
+.search-input{
+  width: 80%;
+  margin: 1em;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+#searchicon {
+  height: 1em;
+}
+
+/* Filter Region */
+
+.selectarea {
+  margin: 2em 1em 2em 1em;
+  width: 80%;
+}
+
+.rselect {
+  width: 12em;
+  margin: 0;
+  padding: 1em 1em 1em 1em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+/* Light mode */
+
+.lightmode-bg {
+ background-color:hsl(0, 0%, 98%);
+ color: black;
+}
+
+.lightmode-element {
+ background-color: hsl(0, 0%, 100%);
+}
+
+.lightmode-input {
+  color: hsl(0, 0%, 52%);
+}
+
+.lightmode-input > img {
+  background: hsl(0, 0%, 52%);
 }

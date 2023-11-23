@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import searchiconlightmode from "../Img/magnifying-glass-solid-lightmode.png"
 
 const FilterBySearch = ( { setCData }) => {
     const [search, setSearch] = useState("")
@@ -18,7 +19,10 @@ const FilterBySearch = ( { setCData }) => {
     },[search])
     return (
         <>
-            <input type="text" onChange={(e) => {setSearch(e.target.value)}} value={search}></input>
+        <label htmlFor="search" className="searchlabel lightmode-element">
+            <img className="lightmode-input" id="searchicon" src={searchiconlightmode} />
+            <input id="search" className="search-input lightmode-input" type="text" onChange={(e) => {setSearch(e.target.value)}} placeholder="Search for a country..." value={search}></input>
+        </label>
         </>
     )
 }

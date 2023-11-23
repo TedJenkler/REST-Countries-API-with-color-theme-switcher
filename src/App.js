@@ -4,7 +4,7 @@ import FlagComponent from './Component/FlagComponent';
 
 function App() {
   return (
-   <div className='container'>
+   <div className='container lightmode-bg'>
       <div className='row'>
         <ColorSwitcher />
       </div>

@@ -19,16 +19,16 @@ const FilterByRegion = ( { setCData }) => {
 
 
     return (
-        <>
-            <select onChange={(e) => {setFRegion(e.target.value)}}>
-                <option value={null}>Filter Region</option>
+        <div className="selectarea">
+            <select className="rselect" onChange={(e) => {setFRegion(e.target.value)}}>
+                <option value={null}>Filter By Region</option>
                 <option value="africa">Africa</option>
                 <option value="america">America</option>
                 <option value="asia">Asia</option>
                 <option value="europe">Europe</option>
                 <option value="oceania">Oceania</option>
             </select>
-        </>
+        </div>
     )
 }
 
