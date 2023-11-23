@@ -75,7 +75,7 @@ body, #root, .container {
 /* Filter Region */
 
 .selectarea {
-  margin: 2em 1em 2em 1em;
+  margin: 1em 1em 2em 1em;
   width: 80%;
 }
 
@@ -85,6 +85,37 @@ body, #root, .container {
   padding: 1em 1em 1em 1em;
   border: none;
   border-radius: 0.5em;
+}
+
+/* ColorSwitcher */
+
+.colorswitcharea {
+  display: flex;
+  height: 5em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 1em;
+}
+
+.colorswitch {
+  margin-right: 1em;
+  border: none;
+  height: 100%;
+  font-weight: 500;
+}
+
+.buttonarea {
+  display: flex;
+  align-items: center;
+}
+
+.buttonarea > img {
+  height: 1em;
 }
 
 /* Light mode */
