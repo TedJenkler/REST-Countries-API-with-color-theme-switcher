@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/REST-Countries-API/static/css/main.33547d8a.css",
+    "main.js": "/REST-Countries-API/static/js/main.881c1403.js",
+    "static/js/787.948c4e45.chunk.js": "/REST-Countries-API/static/js/787.948c4e45.chunk.js",
+    "static/media/darkmode.png": "/REST-Countries-API/static/media/darkmode.3813acc66a05c217ef50.png",
+    "static/media/moon-darkmode.png": "/REST-Countries-API/static/media/moon-darkmode.db7e6fb5fb841de63e94.png",
+    "static/media/magnifying-glass-solid-lightmode.png": "/REST-Countries-API/static/media/magnifying-glass-solid-lightmode.878c0e375ab1ee3ffde5.png",
+    "index.html": "/REST-Countries-API/index.html",
+    "static/media/moon-regular.svg": "/REST-Countries-API/static/media/moon-regular.71644cc1012ed21d84b3149952fea852.svg",
+    "main.33547d8a.css.map": "/REST-Countries-API/static/css/main.33547d8a.css.map",
+    "main.881c1403.js.map": "/REST-Countries-API/static/js/main.881c1403.js.map",
+    "787.948c4e45.chunk.js.map": "/REST-Countries-API/static/js/787.948c4e45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33547d8a.css",
+    "static/js/main.881c1403.js"
+  ]
+}
