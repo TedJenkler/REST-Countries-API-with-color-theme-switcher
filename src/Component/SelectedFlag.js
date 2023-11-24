@@ -4,7 +4,7 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
     useEffect(() => {
         if(selected !== ""){
         const filterSelected = async () => {
-            const response = await fetch(`https://restcountries.com/v3.1/name/${selected}`)
+            const response = await fetch(selected.length <= 3 ? `https://restcountries.com/v3.1/alpha?codes=${selected},${selected},${selected}` : `https://restcountries.com/v3.1/name/${selected}`)
             const data = await response.json()
             console.log(data)
             setSCData(data)
@@ -101,6 +101,14 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                     <p><strong className="bold">Top Level Domain:</strong> {country.tld}</p>
                     <p><strong className="bold">Currencies:</strong> {Object.keys(country.currencies)}</p>
                     <p><strong className="bold">Languages:</strong> {Object.values(country.languages) + ""}</p>
+                    <div className="bordercountriesarea">
+                    <h1>Border Countries:</h1>
+                    {country.borders.map((name) => {
+                        return (<>
+                            <button onClick={(e) => {setSelected(name.toLowerCase())}} key={name}>{name}</button>
+                            </> )
+                    })}
+                    </div>
                 </div>
             )
         })

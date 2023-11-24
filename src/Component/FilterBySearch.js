@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import searchiconlightmode from "../Img/magnifying-glass-solid-lightmode.png"
 import searchicondarkmode from "../Img/darkmode.png"
 
-const FilterBySearch = ( { setCData, toggle, search, setSearch }) => {
+const FilterBySearch = ({ setCData, toggle, search, setSearch }) => {
     useEffect(() => {
         if(search !== ""){
         const filterSearch = async () => {
@@ -12,8 +12,8 @@ const FilterBySearch = ( { setCData, toggle, search, setSearch }) => {
             setCData(data)
         }
         filterSearch()
-        }
-        else{
+        }else {
+
         }
     },[search])
     return (
