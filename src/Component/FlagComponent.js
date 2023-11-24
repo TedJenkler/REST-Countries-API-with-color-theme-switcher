@@ -11,7 +11,7 @@ const FlagComponent = ({ toggle }) => {
     const [selected, setSelected] = useState("")
     return (
         <>
-        {selected !== "" ? <BackButton setSelected={setSelected} /> : null}
+        {selected !== "" ? <BackButton setSelected={setSelected} toggle={toggle} /> : null}
         {selected === "" ? <FilterBySearch setCData={setCData} toggle={toggle} search={search} setSearch={setSearch} /> : null}
         {selected === "" ? <FilterByRegion setCData={setCData} toggle={toggle} /> : null}
         {selected === "" ? <Flags cData={cData} setCData={setCData} toggle={toggle} search={search} setSearch={setSearch} selected={selected} setSelected={setSelected} /> : <SelectedFlag toggle={toggle} selected={selected} setSelected={setSelected} />}

@@ -18,7 +18,7 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
     return (<>
         {sCData.map((country) => {
             return (
-                <div key={country.name.official} className={toggle === false ? "card lightmode-element" : "card darkmode-element"}>
+                <div key={country.name.common} className={toggle === false ? "countryselect lightmode-bg" : "countryselect darkmode-bg"}>
                     <img src={country.flags.svg} alt=""></img>
                     <h1>{country.name.official}</h1>
                    {Object.keys(country.name.nativeName)[0] === "fra" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.fra.official}</p> : null }
@@ -102,10 +102,11 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                     <p><strong className="bold">Currencies:</strong> {Object.keys(country.currencies)}</p>
                     <p><strong className="bold">Languages:</strong> {Object.values(country.languages) + ""}</p>
                     <div className="bordercountriesarea">
+                    <br></br>
                     <h1>Border Countries:</h1>
                     {country.borders.map((name) => {
                         return (<>
-                            <button onClick={(e) => {setSelected(name.toLowerCase())}} key={name}>{name}</button>
+                            <button className={toggle === false ? "borderbutton lightmode-element" : "borderbutton darkmode-element"} key={name} onClick={(e) => {setSelected(name.toLowerCase())}}>{name}</button>
                             </> )
                     })}
                     </div>
