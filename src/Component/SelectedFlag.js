@@ -60,6 +60,36 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                    {Object.keys(country.name.nativeName)[0] === "tur" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.tur.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "mya" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.mya.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "ind" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ind.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "ell" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ell.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "bul" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bul.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "ukr" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ukr.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "fin" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.fin.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "pol" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.pol.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "slk" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.slk.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "mkd" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.mkd.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "deu" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.deu.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "hun" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.hun.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "slv" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.slv.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "bos" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bos.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "ron" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ron.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "lav" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.lav.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "nld" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.nld.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "cat" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.cat.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "ita" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ita.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "srp" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.srp.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "ces" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ces.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "cnr" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.cnr.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "swe" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.swe.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "isl" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.isl.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "est" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.est.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "sqi" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.sqi.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "hrv" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.hrv.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "bar" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bar.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "lit" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.lit.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "nno" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.nno.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "dan" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.dan.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "bel" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bel.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "nor" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.nor.official}</p> : null }
                    {console.log(Object.keys(country.name.nativeName)[0])}
                     <p><strong className="bold">Population:</strong> {country.population}</p>
                     <p><strong className="bold">Region:</strong> {country.region}</p>
