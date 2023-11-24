@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
-const Flags = ({ cData, setCData, toggle }) => {
-
+const Flags = ({ cData, setCData, toggle, search, setSearch, selected, setSelected }) => {
     useEffect(() => {
         const fetchData = async () => {
           const response = await fetch('https://restcountries.com/v3.1/all')
@@ -15,7 +14,7 @@ const Flags = ({ cData, setCData, toggle }) => {
     return (<>
         {cData.map((country) => {
             return (
-                <div key={country.name.official} className={toggle === false ? "card lightmode-element" : "card darkmode-element"}>
+                <div onClick={(e) => {setSelected(country.name.official)}} key={country.name.official} className={toggle === false ? "card lightmode-element" : "card darkmode-element"}>
                     <img src={country.flags.svg} alt=""></img>
                     <h1>{country.name.official}</h1>
                     <p><strong className="bold">Population:</strong> {country.population}</p>

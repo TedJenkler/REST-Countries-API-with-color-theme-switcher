@@ -2,9 +2,7 @@ import { useEffect, useState } from "react"
 import searchiconlightmode from "../Img/magnifying-glass-solid-lightmode.png"
 import searchicondarkmode from "../Img/darkmode.png"
 
-const FilterBySearch = ( { setCData, toggle }) => {
-    const [search, setSearch] = useState("")
-    console.log(search)
+const FilterBySearch = ( { setCData, toggle, search, setSearch }) => {
     useEffect(() => {
         if(search !== ""){
         const filterSearch = async () => {
