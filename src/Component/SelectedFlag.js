@@ -6,7 +6,6 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
         const filterSelected = async () => {
             const response = await fetch(selected.length <= 3 ? `https://restcountries.com/v3.1/alpha?codes=${selected},${selected},${selected}` : `https://restcountries.com/v3.1/name/${selected}`)
             const data = await response.json()
-            console.log(data)
             setSCData(data)
         }
         filterSelected()

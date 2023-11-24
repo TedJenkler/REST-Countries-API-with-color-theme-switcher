@@ -10,7 +10,7 @@ function App(){
       <div className='row'>
         <ColorSwitcher toggle={toggle} setToggle={setToggle} />
       </div>
-      <div className='row'>
+      <div className='row desktop-row2'>
         <FlagComponent toggle={toggle} />
       </div>
    </div>

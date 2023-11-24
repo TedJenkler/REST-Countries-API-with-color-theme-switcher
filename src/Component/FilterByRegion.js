@@ -8,7 +8,6 @@ const FilterByRegion = ( { setCData, toggle }) => {
         const filterRegion = async () => {
             const response = await fetch(`https://restcountries.com/v3.1/region/${fRegion}`)
             const data = await response.json()
-            console.log(data)
             setCData(data)
         }
         filterRegion()

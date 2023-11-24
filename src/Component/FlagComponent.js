@@ -12,8 +12,10 @@ const FlagComponent = ({ toggle }) => {
     return (
         <>
         {selected !== "" ? <BackButton setSelected={setSelected} toggle={toggle} /> : null}
-        {selected === "" ? <FilterBySearch setCData={setCData} toggle={toggle} search={search} setSearch={setSearch} /> : null}
-        {selected === "" ? <FilterByRegion setCData={setCData} toggle={toggle} /> : null}
+        <div className="responsive1">
+            {selected === "" ? <FilterBySearch setCData={setCData} toggle={toggle} search={search} setSearch={setSearch} /> : null}
+            {selected === "" ? <FilterByRegion setCData={setCData} toggle={toggle} /> : null}
+        </div>
         {selected === "" ? <Flags cData={cData} setCData={setCData} toggle={toggle} search={search} setSearch={setSearch} selected={selected} setSelected={setSelected} /> : <SelectedFlag toggle={toggle} selected={selected} setSelected={setSelected} />}
         </>
     )

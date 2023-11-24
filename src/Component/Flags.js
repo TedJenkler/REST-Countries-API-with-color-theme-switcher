@@ -17,7 +17,7 @@ const Flags = ({ cData, setCData, toggle, setSelected }) => {
             return (
                 <div onClick={(e) => {setSelected(country.name.official)}} key={country.name.official} className={toggle === false ? "card lightmode-element" : "card darkmode-element"}>
                     <img src={country.flags.svg} alt={country.name.common}></img>
-                    <h1>{country.name.official}</h1>
+                    <h1>{country.name.common}</h1>
                     <p><strong className="bold">Population:</strong> {country.population}</p>
                     <p><strong className="bold">Region:</strong> {country.region}</p>
                     <p><strong className="bold">Capital:</strong> {country.capital}</p>
