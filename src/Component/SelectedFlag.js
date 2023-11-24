@@ -90,6 +90,9 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                    {Object.keys(country.name.nativeName)[0] === "dan" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.dan.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "bel" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bel.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "nor" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.nor.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "cha" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.cha.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "cal" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.cal.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "bis" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bis.official}</p> : null }
                    {console.log(Object.keys(country.name.nativeName)[0])}
                     <p><strong className="bold">Population:</strong> {country.population}</p>
                     <p><strong className="bold">Region:</strong> {country.region}</p>
