@@ -30,6 +30,12 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                    {Object.keys(country.name.nativeName)[0] === "bwg" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bwg.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "ber" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ber.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "afr" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.afr.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "aym" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.aym.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "spa" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.spa.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "kal" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.kal.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "nld" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.nld.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "bjz" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bjz.official}</p> : null }
+                   {Object.keys(country.name.nativeName)[0] === "grn" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.grn.official}</p> : null }
                    {console.log(Object.keys(country.name.nativeName)[0])}
                     <p><strong className="bold">Population:</strong> {country.population}</p>
                     <p><strong className="bold">Region:</strong> {country.region}</p>
