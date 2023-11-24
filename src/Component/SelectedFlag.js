@@ -18,7 +18,7 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
     return (<>
         {sCData.map((country) => {
             return (
-                <div className={toggle === false ? "card lightmode-element" : "card darkmode-element"}>
+                <div key={country.name.official} className={toggle === false ? "card lightmode-element" : "card darkmode-element"}>
                     <img src={country.flags.svg} alt=""></img>
                     <h1>{country.name.official}</h1>
                    {Object.keys(country.name.nativeName)[0] === "fra" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.fra.official}</p> : null }
@@ -93,10 +93,14 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                    {Object.keys(country.name.nativeName)[0] === "cha" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.cha.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "cal" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.cal.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "bis" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.bis.official}</p> : null }
-                   {console.log(Object.keys(country.name.nativeName)[0])}
                     <p><strong className="bold">Population:</strong> {country.population}</p>
                     <p><strong className="bold">Region:</strong> {country.region}</p>
+                    <p><strong className="bold">Sub Region:</strong> {country.subregion}</p>
                     <p><strong className="bold">Capital:</strong> {country.capital}</p>
+                    <br></br>
+                    <p><strong className="bold">Top Level Domain:</strong> {country.tld}</p>
+                    <p><strong className="bold">Currencies:</strong> {Object.keys(country.currencies)}</p>
+                    <p><strong className="bold">Languages:</strong> {Object.values(country.languages) + ""}</p>
                 </div>
             )
         })
