@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/REST-Countries-API-with-color-theme-switcher/static/css/main.33547d8a.css",
-    "main.js": "/REST-Countries-API-with-color-theme-switcher/static/js/main.51468113.js",
+    "main.css": "/REST-Countries-API-with-color-theme-switcher/static/css/main.2e343378.css",
+    "main.js": "/REST-Countries-API-with-color-theme-switcher/static/js/main.3c56ce66.js",
     "static/js/787.948c4e45.chunk.js": "/REST-Countries-API-with-color-theme-switcher/static/js/787.948c4e45.chunk.js",
     "static/media/darkmode.png": "/REST-Countries-API-with-color-theme-switcher/static/media/darkmode.3813acc66a05c217ef50.png",
     "static/media/moon-darkmode.png": "/REST-Countries-API-with-color-theme-switcher/static/media/moon-darkmode.db7e6fb5fb841de63e94.png",
     "static/media/magnifying-glass-solid-lightmode.png": "/REST-Countries-API-with-color-theme-switcher/static/media/magnifying-glass-solid-lightmode.878c0e375ab1ee3ffde5.png",
     "index.html": "/REST-Countries-API-with-color-theme-switcher/index.html",
     "static/media/moon-regular.svg": "/REST-Countries-API-with-color-theme-switcher/static/media/moon-regular.71644cc1012ed21d84b3149952fea852.svg",
-    "main.33547d8a.css.map": "/REST-Countries-API-with-color-theme-switcher/static/css/main.33547d8a.css.map",
-    "main.51468113.js.map": "/REST-Countries-API-with-color-theme-switcher/static/js/main.51468113.js.map",
+    "static/media/arrow-left-long-solid.svg": "/REST-Countries-API-with-color-theme-switcher/static/media/arrow-left-long-solid.255032b3ac312ef8ce325b85f5bb976e.svg",
+    "main.2e343378.css.map": "/REST-Countries-API-with-color-theme-switcher/static/css/main.2e343378.css.map",
+    "main.3c56ce66.js.map": "/REST-Countries-API-with-color-theme-switcher/static/js/main.3c56ce66.js.map",
     "787.948c4e45.chunk.js.map": "/REST-Countries-API-with-color-theme-switcher/static/js/787.948c4e45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33547d8a.css",
-    "static/js/main.51468113.js"
+    "static/css/main.2e343378.css",
+    "static/js/main.3c56ce66.js"
   ]
 }
