@@ -324,6 +324,14 @@ body, #root, .container {
     padding: 0;
   }
 
+  .card > img {
+   min-height: 12em;
+  }
+
+  .rselect {
+    margin-left: 25em;
+  }
+
   .searchlabel {
     width: 28em;
     margin: 2em 15em 2em 2em;

@@ -14,8 +14,9 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
         }
     },[selected])
 
-    return (<>
-        {sCData.map((country) => {
+    const renderSelectedData = () => {
+        return (
+        sCData.map((country) => {
             return (
                 <div key={country.name.common} className={toggle === false ? "countryselect lightmode-bg" : "countryselect darkmode-bg"}>
                     <div className="imgdivselected">
@@ -122,7 +123,10 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                     </div>
             )
         })
-    }
+    )}
+
+    return (<>
+        {renderSelectedData()}
     </> )
 }
 
