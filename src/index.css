@@ -163,7 +163,7 @@ body, #root, .container {
   padding: 3em 1.5em 0 1.5em;
  }
 
- .countryselect > img {
+ .countryselect > div > img {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -171,14 +171,14 @@ body, #root, .container {
   border-bottom: 1px solid lightgray;
  }
 
-.countryselect > h1 {
+.countryselect > div > h1 {
   margin: 0.75em 0 0.75em 0;
   font-size: 1.5em;
   font-weight: 700;
   padding: 0em 1em 0 0em;
 }
 
-.countryselect > p {
+.countryselect > div > p {
   margin: 0 0 0.5em 0;
   padding: 0em 1em 0 0em;
 }
@@ -260,56 +260,133 @@ body, #root, .container {
     margin-right: 4em;
   }
 
-   /* Selected Country */
-
-   .countryselect {
+  .countryselect {
     padding: 3em 1.5em 0 1.5em;
+    display: flex;
+    flex-direction: row;
+   }
+
+   .imgdivselected {
+    width: 80%;
+   }
+
+   .contentdivselected {
+    width: 100%;
     display: flex;
     flex-direction: column;
    }
 
-   .countryselect > img {
-    width: 40%;
-   }
-
-  .countryselect > h1 {
-    margin: 0.75em 0 0.75em 0;
-    font-size: 1.5em;
-    font-weight: 700;
-    padding: 0em 1em 0 0em;
-  }
-  
-  .countryselect > p {
-    margin: 0 0 0.5em 0;
-    padding: 0em 1em 0 0em;
-  }
-  
-  .borderbutton {
-    border: none;
-    border-radius: 0.25em;
-    margin: 0.25em;
-    padding: 0.5em 2em 0.5em 2em;
-    width: 6em;
-  }
-  
-  /* Backbutton */
-  
-  .backbutton {
-    width: 7.5em;
+   .content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0.5em 1em 0.5em 1em;
-    margin: 2em 0 1em 1em;
-    border: none;
-    border-radius: 0.25em;
+   }
+
+   .countryselect > div > img {
+    width: 98%;
+   }
+
+  .content > div > h1 {
+    margin: 0em 0em 0em 0.1em;
+    padding: 0em;
+    font-size: 2em;
   }
-  
-  .backbutton > img {
-    height: 1em;
+
+  .content > div > p {
+    margin: 0 0 1em 0.5em;
+    padding: 0;
+
   }
-  
-  .backbuttonarea {
+
+  .backbutton {
+    margin: 4em 0 1em 1em;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .card {
+    margin: 2em;
+    width: 18em;
+    padding: 0 0 0 0;
+    height: 22.5em;
+  }
+
+  .card > h1 {
+    margin: 0.25em 0 0.25em 0.25em;
+    font-size: 1.5em;
+    padding: 0;
+  }
+
+  .card > p {
+    margin: 0 0 0 0.5em;
+    padding: 0;
+  }
+
+  .searchlabel {
+    width: 28em;
+    margin: 2em 15em 2em 2em;
+  }
+
+  .selectarea {
+    margin: 2em;
+    width: 10em;
+  }
+
+  .header {
+    margin-left: 4em;
+  }
+
+  .colorswitch {
+    margin-right: 4em;
+  }
+
+  .countryselect {
+    padding: 3em 1.5em 0 1.5em;
     display: flex;
+    flex-direction: row;
+   }
+
+   .imgdivselected {
+    width: 80%;
+   }
+
+   .contentdivselected {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+
+   .countryselect > div > img {
+    width: 98%;
+   }
+
+  .content > div > h1 {
+    margin: 0em 0em 0em 1.25em;
+    padding: 0em;
+    font-size: 2em;
   }
+
+  .content > div > p {
+    margin: 0 0 1em 3em;
+    padding: 0;
+
+  }
+
+  .backbutton {
+    margin: 4em 0 1em 1em;
+  }
+
+  .borderarea {
+    margin-left: 3em;
+    margin-top: 10em;
+  }
+
 }

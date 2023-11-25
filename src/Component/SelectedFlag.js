@@ -18,8 +18,13 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
         {sCData.map((country) => {
             return (
                 <div key={country.name.common} className={toggle === false ? "countryselect lightmode-bg" : "countryselect darkmode-bg"}>
-                    <img src={country.flags.svg} alt=""></img>
-                    <h1>{country.name.official}</h1>
+                    <div className="imgdivselected">
+                        <img src={country.flags.svg} alt=""></img>
+                    </div>
+                    <div className="contentdivselected">
+                    <div className="content">
+                    <div>
+                    <h1>{country.name.common}</h1>
                    {Object.keys(country.name.nativeName)[0] === "fra" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.fra.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "eng" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.eng.official}</p> : null }
                    {Object.keys(country.name.nativeName)[0] === "ara" ? <p><strong className="bold">Native Name:</strong> {country.name.nativeName.ara.official}</p> : null }
@@ -96,12 +101,16 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                     <p><strong className="bold">Region:</strong> {country.region}</p>
                     <p><strong className="bold">Sub Region:</strong> {country.subregion}</p>
                     <p><strong className="bold">Capital:</strong> {country.capital}</p>
+                    </div>
                     <br></br>
+                    <div>
                     <p><strong className="bold">Top Level Domain:</strong> {country.tld}</p>
                     <p><strong className="bold">Currencies:</strong> {Object.keys(country.currencies)}</p>
                     <p><strong className="bold">Languages:</strong> {Object.values(country.languages) + ""}</p>
-                    <div className="bordercountriesarea">
+                    </div>
+                    </div>
                     <br></br>
+                    <div className="borderarea">
                     <h1>Border Countries:</h1>
                     {country.borders.map((name) => {
                         return (<>
@@ -109,7 +118,8 @@ const SelectedFlag = ({ toggle, selected, setSelected }) => {
                             </> )
                     })}
                     </div>
-                </div>
+                    </div>
+                    </div>
             )
         })
     }
